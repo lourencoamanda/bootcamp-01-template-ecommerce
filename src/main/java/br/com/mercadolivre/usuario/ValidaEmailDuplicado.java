@@ -24,7 +24,6 @@ public class ValidaEmailDuplicado implements Validator {
         }
 
         UsuarioRequest usuarioRequest = (UsuarioRequest) target;
-
         if (usuarioRepository.findByLogin(usuarioRequest.getLogin()).isPresent()) {
             errors.rejectValue("login", null, "Login já possui cadastro no sistema, tente com outro!");
         }

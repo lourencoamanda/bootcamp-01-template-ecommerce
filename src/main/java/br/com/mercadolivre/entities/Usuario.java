@@ -33,6 +33,7 @@ public class Usuario  implements Serializable {
 
     private LocalDateTime dataHora = LocalDateTime.now();
 
+    @Deprecated
     public Usuario(){
     }
 
